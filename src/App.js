@@ -52,7 +52,7 @@ function App() {
   return (
     <Container>
       <Quote quote={quote} />
-      <Buttom onClick={handleClick}>Request Quote</Buttom>;
+      <Buttom onClick={handleClick}>Request Quote</Buttom>
     </Container>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import PropTypes from "prop-types";
 
 const Container = styled.div`
   padding: 3rem;
@@ -38,15 +39,16 @@ const Container = styled.div`
 `;
 
 const Quote = ({ quote }) => {
-  //   if (Object.keys(quote).length === 0) {
-  //     return null;
-  //   }
   return (
     <Container>
       <h1>{quote.quote}</h1>
       <p>- {quote.author}</p>
     </Container>
   );
+};
+
+Quote.propTypes = {
+  quote: PropTypes.object.isRequired,
 };
 
 export default Quote;
